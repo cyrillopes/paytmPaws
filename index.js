@@ -140,7 +140,7 @@ app.post("/callback", (req, res) => {
             var _results = JSON.parse(response);
             /* where it will come back after payment*/
             res.redirect(
-              `https://d388dc520556-shared.lowcodeunit.com/viewOrders?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`
+              `https://fc9d6728a786-shared.lowcodeunit.com/viewOrders?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`
             );
           });
         });
